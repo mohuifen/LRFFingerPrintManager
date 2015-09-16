@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DE4E6061BA906F70092DBF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E6051BA906F70092DBF1 /* main.m */; };
+		3DE4E6091BA906F70092DBF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E6081BA906F70092DBF1 /* AppDelegate.m */; };
+		3DE4E60C1BA906F70092DBF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E60B1BA906F70092DBF1 /* ViewController.m */; };
+		3DE4E60F1BA906F70092DBF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4E60D1BA906F70092DBF1 /* Main.storyboard */; };
+		3DE4E6111BA906F70092DBF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4E6101BA906F70092DBF1 /* Images.xcassets */; };
+		3DE4E6141BA906F70092DBF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4E6121BA906F70092DBF1 /* LaunchScreen.xib */; };
+		3DE4E6201BA906F80092DBF1 /* LRFFingerPrintManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E61F1BA906F80092DBF1 /* LRFFingerPrintManagerTests.m */; };
+		3DE4E62C1BA907260092DBF1 /* LRFFingerprintUnlockManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E62B1BA907260092DBF1 /* LRFFingerprintUnlockManager.m */; };
+		3DE4E6301BA907930092DBF1 /* NSUserDefaults+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E62F1BA907930092DBF1 /* NSUserDefaults+Helper.m */; };
+		3DE4E6331BA908500092DBF1 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E6321BA908500092DBF1 /* Utils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DE4E61A1BA906F80092DBF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DE4E5F81BA906F70092DBF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DE4E5FF1BA906F70092DBF1;
+			remoteInfo = LRFFingerPrintManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DE4E6001BA906F70092DBF1 /* LRFFingerPrintManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRFFingerPrintManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE4E6041BA906F70092DBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE4E6051BA906F70092DBF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DE4E6071BA906F70092DBF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DE4E6081BA906F70092DBF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DE4E60A1BA906F70092DBF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DE4E60B1BA906F70092DBF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DE4E60E1BA906F70092DBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DE4E6101BA906F70092DBF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DE4E6131BA906F70092DBF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3DE4E6191BA906F80092DBF1 /* LRFFingerPrintManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRFFingerPrintManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DE4E61E1BA906F80092DBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE4E61F1BA906F80092DBF1 /* LRFFingerPrintManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRFFingerPrintManagerTests.m; sourceTree = "<group>"; };
+		3DE4E62A1BA907260092DBF1 /* LRFFingerprintUnlockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRFFingerprintUnlockManager.h; sourceTree = "<group>"; };
+		3DE4E62B1BA907260092DBF1 /* LRFFingerprintUnlockManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRFFingerprintUnlockManager.m; sourceTree = "<group>"; };
+		3DE4E62E1BA907930092DBF1 /* NSUserDefaults+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Helper.h"; sourceTree = "<group>"; };
+		3DE4E62F1BA907930092DBF1 /* NSUserDefaults+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Helper.m"; sourceTree = "<group>"; };
+		3DE4E6311BA908500092DBF1 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		3DE4E6321BA908500092DBF1 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DE4E5FD1BA906F70092DBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE4E6161BA906F80092DBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DE4E5F71BA906F70092DBF1 = {
+			isa = PBXGroup;
+			children = (
+				3DE4E6021BA906F70092DBF1 /* LRFFingerPrintManager */,
+				3DE4E61C1BA906F80092DBF1 /* LRFFingerPrintManagerTests */,
+				3DE4E6011BA906F70092DBF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DE4E6011BA906F70092DBF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E6001BA906F70092DBF1 /* LRFFingerPrintManager.app */,
+				3DE4E6191BA906F80092DBF1 /* LRFFingerPrintManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DE4E6021BA906F70092DBF1 /* LRFFingerPrintManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E6291BA907260092DBF1 /* FingerPrintManager */,
+				3DE4E6071BA906F70092DBF1 /* AppDelegate.h */,
+				3DE4E6081BA906F70092DBF1 /* AppDelegate.m */,
+				3DE4E60A1BA906F70092DBF1 /* ViewController.h */,
+				3DE4E60B1BA906F70092DBF1 /* ViewController.m */,
+				3DE4E60D1BA906F70092DBF1 /* Main.storyboard */,
+				3DE4E6101BA906F70092DBF1 /* Images.xcassets */,
+				3DE4E6121BA906F70092DBF1 /* LaunchScreen.xib */,
+				3DE4E6031BA906F70092DBF1 /* Supporting Files */,
+			);
+			path = LRFFingerPrintManager;
+			sourceTree = "<group>";
+		};
+		3DE4E6031BA906F70092DBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E6041BA906F70092DBF1 /* Info.plist */,
+				3DE4E6051BA906F70092DBF1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE4E61C1BA906F80092DBF1 /* LRFFingerPrintManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E61F1BA906F80092DBF1 /* LRFFingerPrintManagerTests.m */,
+				3DE4E61D1BA906F80092DBF1 /* Supporting Files */,
+			);
+			path = LRFFingerPrintManagerTests;
+			sourceTree = "<group>";
+		};
+		3DE4E61D1BA906F80092DBF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E61E1BA906F80092DBF1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DE4E6291BA907260092DBF1 /* FingerPrintManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E62D1BA907930092DBF1 /* Helper */,
+				3DE4E62A1BA907260092DBF1 /* LRFFingerprintUnlockManager.h */,
+				3DE4E62B1BA907260092DBF1 /* LRFFingerprintUnlockManager.m */,
+				3DE4E6311BA908500092DBF1 /* Utils.h */,
+				3DE4E6321BA908500092DBF1 /* Utils.m */,
+			);
+			path = FingerPrintManager;
+			sourceTree = "<group>";
+		};
+		3DE4E62D1BA907930092DBF1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3DE4E62E1BA907930092DBF1 /* NSUserDefaults+Helper.h */,
+				3DE4E62F1BA907930092DBF1 /* NSUserDefaults+Helper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DE4E5FF1BA906F70092DBF1 /* LRFFingerPrintManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE4E6231BA906F80092DBF1 /* Build configuration list for PBXNativeTarget "LRFFingerPrintManager" */;
+			buildPhases = (
+				3DE4E5FC1BA906F70092DBF1 /* Sources */,
+				3DE4E5FD1BA906F70092DBF1 /* Frameworks */,
+				3DE4E5FE1BA906F70092DBF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LRFFingerPrintManager;
+			productName = LRFFingerPrintManager;
+			productReference = 3DE4E6001BA906F70092DBF1 /* LRFFingerPrintManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DE4E6181BA906F80092DBF1 /* LRFFingerPrintManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DE4E6261BA906F80092DBF1 /* Build configuration list for PBXNativeTarget "LRFFingerPrintManagerTests" */;
+			buildPhases = (
+				3DE4E6151BA906F80092DBF1 /* Sources */,
+				3DE4E6161BA906F80092DBF1 /* Frameworks */,
+				3DE4E6171BA906F80092DBF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DE4E61B1BA906F80092DBF1 /* PBXTargetDependency */,
+			);
+			name = LRFFingerPrintManagerTests;
+			productName = LRFFingerPrintManagerTests;
+			productReference = 3DE4E6191BA906F80092DBF1 /* LRFFingerPrintManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DE4E5F81BA906F70092DBF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = LRF;
+				TargetAttributes = {
+					3DE4E5FF1BA906F70092DBF1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3DE4E6181BA906F80092DBF1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3DE4E5FF1BA906F70092DBF1;
+					};
+				};
+			};
+			buildConfigurationList = 3DE4E5FB1BA906F70092DBF1 /* Build configuration list for PBXProject "LRFFingerPrintManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DE4E5F71BA906F70092DBF1;
+			productRefGroup = 3DE4E6011BA906F70092DBF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DE4E5FF1BA906F70092DBF1 /* LRFFingerPrintManager */,
+				3DE4E6181BA906F80092DBF1 /* LRFFingerPrintManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DE4E5FE1BA906F70092DBF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE4E60F1BA906F70092DBF1 /* Main.storyboard in Resources */,
+				3DE4E6141BA906F70092DBF1 /* LaunchScreen.xib in Resources */,
+				3DE4E6111BA906F70092DBF1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE4E6171BA906F80092DBF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DE4E5FC1BA906F70092DBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE4E62C1BA907260092DBF1 /* LRFFingerprintUnlockManager.m in Sources */,
+				3DE4E6301BA907930092DBF1 /* NSUserDefaults+Helper.m in Sources */,
+				3DE4E60C1BA906F70092DBF1 /* ViewController.m in Sources */,
+				3DE4E6331BA908500092DBF1 /* Utils.m in Sources */,
+				3DE4E6091BA906F70092DBF1 /* AppDelegate.m in Sources */,
+				3DE4E6061BA906F70092DBF1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DE4E6151BA906F80092DBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DE4E6201BA906F80092DBF1 /* LRFFingerPrintManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DE4E61B1BA906F80092DBF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DE4E5FF1BA906F70092DBF1 /* LRFFingerPrintManager */;
+			targetProxy = 3DE4E61A1BA906F80092DBF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DE4E60D1BA906F70092DBF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE4E60E1BA906F70092DBF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DE4E6121BA906F70092DBF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DE4E6131BA906F70092DBF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DE4E6211BA906F80092DBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DE4E6221BA906F80092DBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DE4E6241BA906F80092DBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LRFFingerPrintManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DE4E6251BA906F80092DBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LRFFingerPrintManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3DE4E6271BA906F80092DBF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LRFFingerPrintManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRFFingerPrintManager.app/LRFFingerPrintManager";
+			};
+			name = Debug;
+		};
+		3DE4E6281BA906F80092DBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LRFFingerPrintManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LRFFingerPrintManager.app/LRFFingerPrintManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DE4E5FB1BA906F70092DBF1 /* Build configuration list for PBXProject "LRFFingerPrintManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE4E6211BA906F80092DBF1 /* Debug */,
+				3DE4E6221BA906F80092DBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DE4E6231BA906F80092DBF1 /* Build configuration list for PBXNativeTarget "LRFFingerPrintManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE4E6241BA906F80092DBF1 /* Debug */,
+				3DE4E6251BA906F80092DBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3DE4E6261BA906F80092DBF1 /* Build configuration list for PBXNativeTarget "LRFFingerPrintManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DE4E6271BA906F80092DBF1 /* Debug */,
+				3DE4E6281BA906F80092DBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DE4E5F81BA906F70092DBF1 /* Project object */;
+}
