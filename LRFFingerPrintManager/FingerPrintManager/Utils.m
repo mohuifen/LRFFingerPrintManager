@@ -13,8 +13,15 @@
 
 @implementation Utils
 
-+ (int)findNumFromStr:(NSString *)string
-{
+inline void showAlertWithMsg(NSString * msg,  NSString *buttonTitle) {
+    if (!msg)
+        return;
+    
+    UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"" message:msg delegate:nil cancelButtonTitle:nil otherButtonTitles:buttonTitle, nil];
+    [alertView show];
+}
+
++ (int)findNumFromStr:(NSString *)string {
     // Intermediate
     NSMutableString *numberString = [[NSMutableString alloc] init];
     NSString *tempStr;
@@ -27,11 +34,12 @@
         
         // Collect numbers.
         [scanner scanCharactersFromSet:numbers intoString:&tempStr];
-        [numberString appendString:tempStr];
+        if (tempStr) {
+            [numberString appendString:tempStr];
+        }
         tempStr = @"";
         break;
     }
-    // Result.
     int number = [numberString intValue];
     
     return number;
@@ -46,8 +54,7 @@
     return isMoreThan7;
 }
 
-+ (NSString *)getCurrentDeviceModel
-{
++ (NSString *)getCurrentDeviceModel {
     int mib[2];
     size_t len;
     char *machine;
@@ -133,14 +140,10 @@
         if ([systemModel containsString:@"5s"]) {
             isSupportTouchID = YES;
         }
-    }
-    //是 iPod Touch 设备
-    else if ([systemModel containsString:@"iPod"]) {
+    } else if ([systemModel containsString:@"iPod"]) {//是 iPod Touch 设备
         
         isSupportTouchID = NO;
-    }
-    //是 iPad 设备
-    else if ([systemModel containsString:@"iPad"]) {
+    } else if ([systemModel containsString:@"iPad"]) {//是 iPad 设备
         
         if ([systemModel containsString:@"mini"]) {
             number = [Utils findNumFromStr:systemModel];

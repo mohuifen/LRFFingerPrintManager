@@ -11,6 +11,14 @@
 @interface Utils : NSObject
 
 /**
+ *  弹出警告框
+ *
+ *  @param msg         警告的信息
+ *  @param buttonTitle 确定按钮的 title
+ */
+void showAlertWithMsg(NSString * msg,  NSString *buttonTitle);
+
+/**
  *  查找一段字符串中的第一个数字
  *
  *  @param string 字符串

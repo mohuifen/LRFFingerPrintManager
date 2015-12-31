@@ -20,6 +20,10 @@
 
 @implementation LRFFingerprintUnlockManager
 
+// 默认在设置页面是否打开使用指纹解锁
+#define DefaultIsOpenedFingerprint  1
+
+
 static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
 
 
@@ -74,12 +78,19 @@ static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
     NSString  *key = [self isOpenedFingerprintKey];
     NSNumber * needFingerPrintNum = [[NSUserDefaults standardUserDefaults] valueForKey:key];
     if (needFingerPrintNum == nil) {
-        [[NSUserDefaults standardUserDefaults] setValue:nil forKey:key withDefaultValue:@0];
+        [self setDefaultIsOpenedFingerprint:DefaultIsOpenedFingerprint];
     }
     needFingerPrintNum = [[NSUserDefaults standardUserDefaults] valueForKey:key];
     return needFingerPrintNum.boolValue;
 }
-
+/**
+ *  设置默认的在设置中是否打开使用 指纹解锁
+ *
+ *  @param isOpenedFingerprint
+ */
+- (void)setDefaultIsOpenedFingerprint:(BOOL)isOpenedFingerprint {
+    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:[self isOpenedFingerprintKey] withDefaultValue:@(isOpenedFingerprint)];
+}
 
 #pragma mark - TouchId Available
 
@@ -142,7 +153,7 @@ static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
     
     //设置中关闭指纹解锁 or 设备无法使用touch ID，直接执行验证失败模块
     if (!self.isOpenedFingerprint || ![self isDeviceSupportTouchId]) {
-        failuesBlock(nil);
+        failuesBlock(@"无法使用指纹解锁");
         return;
     }
     [self verificationTouchIdWithUnAvailable:unAvailableBlock
@@ -174,9 +185,7 @@ static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
                 dispatch_async(dispatch_get_main_queue(), ^{
                     successBlock(str);
                 });
-            }
-            else
-            {
+            } else {
                 NSString* str = [NSString stringWithFormat:@"抱歉，您未能通过Touch ID指纹验证！\n%@",error];
                 NSLog(@"%@",str);
                 switch (error.code) {
@@ -200,35 +209,36 @@ static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
                 
             }
         }];
-    }
-    else {
+    } else {
         
-        NSString *str = nil;
-        //不支持指纹识别，LOG出错误详情
-        
-        switch (error.code) {
-            case LAErrorTouchIDNotEnrolled://无可用指纹
-            {
-                str = NSLocalizedString(@"SR_NoFingerprintPassword",@"");
-                break;
-            }
-            case LAErrorPasscodeNotSet://设备未开启密码
-            {
-                str = NSLocalizedString(@"SR_NoPhoneUnlockPassword",@"");
-                break;
-            }
-            case LAErrorTouchIDNotAvailable:
-            default:
-            {
-                NSLog(@"TouchID not available");
-                break;
-            }
-        }
+        NSString *str = [self getErrorStringWithError:error];
         unAvailableBlock(str);
     }
 
 }
-
+- (NSString *)getErrorStringWithError:(NSError *)error {
+    NSString *str = nil;
+    
+    switch (error.code) {
+        case LAErrorTouchIDNotEnrolled://无可用指纹
+        {
+            str = @"您尚未设置指纹密码，请在手机系统“设置--Touch ID与密码”中添加您的指纹";
+            break;
+        }
+        case LAErrorPasscodeNotSet://设备未开启密码
+        {
+            str = @"您尚未设置手机解锁密码，请在手机系统“设置--Touch ID与密码”中设置开启密码";
+            break;
+        }
+        case LAErrorTouchIDNotAvailable:
+        default:
+        {
+            str = @"TouchID不可用";
+            break;
+        }
+    }
+    return str;
+}
 #pragma mark - Remove KVO
 
 - (void)dealloc {
