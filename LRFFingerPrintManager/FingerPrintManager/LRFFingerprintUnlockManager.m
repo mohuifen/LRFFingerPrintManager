@@ -171,7 +171,7 @@ static LRFFingerprintUnlockManager *fingerPrintUnlockManager = nil;
             if (success) {
                 NSString* str = @"恭喜，您通过了Touch ID指纹验证！";
                 NSLog(@"%@",str);
-                dispatch_sync(dispatch_get_main_queue(), ^{
+                dispatch_async(dispatch_get_main_queue(), ^{
                     successBlock(str);
                 });
             }
