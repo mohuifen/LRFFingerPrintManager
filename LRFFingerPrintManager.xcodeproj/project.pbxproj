@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D83EBAD1C62FAB900BCB763 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83EBAC1C62FAB900BCB763 /* AssetsLibrary.framework */; };
+		3D83EBAF1C62FAC100BCB763 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83EBAE1C62FAC100BCB763 /* CoreText.framework */; };
+		3D83EBB11C62FAD200BCB763 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83EBB01C62FAD200BCB763 /* SystemConfiguration.framework */; };
+		3D83EBB31C62FADA00BCB763 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83EBB21C62FADA00BCB763 /* CoreTelephony.framework */; };
+		3D83EBB51C62FAEB00BCB763 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D83EBB41C62FAEB00BCB763 /* BuddyBuildSDK.framework */; };
 		3DE4E6061BA906F70092DBF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E6051BA906F70092DBF1 /* main.m */; };
 		3DE4E6091BA906F70092DBF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E6081BA906F70092DBF1 /* AppDelegate.m */; };
 		3DE4E60C1BA906F70092DBF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE4E60B1BA906F70092DBF1 /* ViewController.m */; };
@@ -30,6 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D83EBAC1C62FAB900BCB763 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3D83EBAE1C62FAC100BCB763 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3D83EBB01C62FAD200BCB763 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D83EBB21C62FADA00BCB763 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3D83EBB41C62FAEB00BCB763 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		3DE4E6001BA906F70092DBF1 /* LRFFingerPrintManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRFFingerPrintManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE4E6041BA906F70092DBF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE4E6051BA906F70092DBF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D83EBB51C62FAEB00BCB763 /* BuddyBuildSDK.framework in Frameworks */,
+				3D83EBB31C62FADA00BCB763 /* CoreTelephony.framework in Frameworks */,
+				3D83EBB11C62FAD200BCB763 /* SystemConfiguration.framework in Frameworks */,
+				3D83EBAF1C62FAC100BCB763 /* CoreText.framework in Frameworks */,
+				3D83EBAD1C62FAB900BCB763 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +87,11 @@
 		3DE4E5F71BA906F70092DBF1 = {
 			isa = PBXGroup;
 			children = (
+				3D83EBB41C62FAEB00BCB763 /* BuddyBuildSDK.framework */,
+				3D83EBB21C62FADA00BCB763 /* CoreTelephony.framework */,
+				3D83EBB01C62FAD200BCB763 /* SystemConfiguration.framework */,
+				3D83EBAE1C62FAC100BCB763 /* CoreText.framework */,
+				3D83EBAC1C62FAB900BCB763 /* AssetsLibrary.framework */,
 				3DE4E6021BA906F70092DBF1 /* LRFFingerPrintManager */,
 				3DE4E61C1BA906F80092DBF1 /* LRFFingerPrintManagerTests */,
 				3DE4E6011BA906F70092DBF1 /* Products */,
@@ -383,6 +403,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LRFFingerPrintManager/Buddybuild",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LRFFingerPrintManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +418,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LRFFingerPrintManager/Buddybuild",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LRFFingerPrintManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +482,7 @@
 				3DE4E6251BA906F80092DBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DE4E6261BA906F80092DBF1 /* Build configuration list for PBXNativeTarget "LRFFingerPrintManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +491,7 @@
 				3DE4E6281BA906F80092DBF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
