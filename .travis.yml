@@ -1,7 +1,4 @@
-#指定运行环境
 language: objective-c
-
-#指定分支，只有指定的分支提交时才会运行脚本
-branches:
-  only:
-    - master
+xcode_project: ./LRFFingerPrintManager.xcodeproj
+xcode_scheme: LRFFingerPrintManager
+osx_image: xcode7.3
